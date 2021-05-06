@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protect your information</title>
+    <link rel="icon" 
+      type="image/png" 
+      href="./images/favicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="wrapper">
+        <div id="content">
+            <div>
+                <h1 id="title">WELCOME</h1>
+                <h2>Protect your information here</h2>
+                <!-- <p>Masukkan data atau informasi yang ingin anda encrypt atau decrypt.</p><p> Tentukkan jumlah block key yang ingin digunakan.</p><p>
+                    Lanjutkan dengan menekan tombol encrypt atau decrypt untuk memproses data atau informasi menjadi terkunci atau terbuka.
+                </p> -->
+                <div class="input-section">
+                    <textarea type="text" id="input-data" placeholder="Type here . . ."></textarea><br>
+                    <div id="input_div">
+                        <label><img src="./images/key.png"> Block key:</label>
+                        <input type="text" size="25" value="1" id="count" disabled>
+                        <input type="button" value="-" id="minus" onclick="minus()">
+                        <input type="button" value="+" id="plus" onclick="plus()">
+                    </div>
+                    
+                    <button id="encrypt-btn" type="submit" onclick="encryptHandle()"><img src="./images/lock.png" id="encrypt-icon"> Encrypt</button>
+                    <button id="decrypt-btn" type="submit" onclick="decryptHandle()"><img src="./images/open-lock.png" id="decrypt-icon"> Decrypt</button><br>
+                    <button id="clear-btn" type="submit" value="Clear" onclick="clearTextArea()"><img src="./images/reload.png"> Reset</button>
+                    <div id="output-data">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js "></script>   
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  background-color: #e2e2e2;
+}
+#wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+}
+
+.active{
+  background-color: #1CEF5B !important;
+}
+
+#content {
+  padding: 30px;
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.input-section {
+  margin-top: 50px;
+}
+
+
+textarea {
+  border-radius: 15px;
+  background: #e2e2e2;
+  box-shadow: inset 7px 7px 14px #b9b9b9, inset -7px -7px 14px #ffffff;
+  border: none;
+  width: 500px;
+  height: 100px;
+  padding: 20px;
+}
+
+button {
+  margin-right: 10px;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  background: #e2e2e2;
+  box-shadow: 5px 5px 10px #919191, -5px -5px 10px #ffffff;
+  color: black;
+}
+
+#input_div{
+  margin-top: 20px; 
+}
+
+#plus, #minus, #count, label{
+  padding: 10px;
+  border:none;
+  border-radius: 5px;
+  background: #e2e2e2;
+  box-shadow:  5px 5px 10px #919191, 
+               -5px -5px 10px #ffffff;
+               font-weight: bold;
+               font-size: 16px;
+}
+
+#count{
+  width: 30px;
+}
+
+#plus{
+  color: #1CEF5B;
+  width: 30px;
+}
+#minus{
+  color: #F70000;
+  width: 30px;
+}
+
+#output-data {
+  margin-top: 20px;
+  list-style: none;
+}
